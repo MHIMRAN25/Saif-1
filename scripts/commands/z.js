@@ -2,7 +2,7 @@ module.exports.config = {
   name: "saif",
   version: "0.0.2",
   permission: 0,
-  prefix: 'auto reply',
+  prefix: 'awto',
   credits: "Nayan",
   description: "talk with bot",
   category: "user",
