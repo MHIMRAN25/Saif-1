@@ -1,12 +1,12 @@
 module.exports.config = {
 	name: "uns",
 	version: "1.0.5",
-	permission: 2,
+	permission: 0,
 	credits: "Nayan",
-	prefix:fales,
+	prefix: true,
 	description: "ban or unblock users",
-	category: "all",
-	usages: "",
+	category: "user",
+	usages: " all",
 	cooldowns: 5
 };
 
@@ -26,4 +26,4 @@ module.exports.run = function({ api, event, getText }) {
 	if (event.messageReply.senderID != api.getCurrentUserID()) return api.sendMessage(getText("returnCant"), event.threadID, event.messageID);
 	if (event.type != "message_reply") return api.sendMessage(getText("missingReply"), event.threadID, event.messageID);
 	return api.unsendMessage(event.messageReply.messageID);
-	}
+											  }
